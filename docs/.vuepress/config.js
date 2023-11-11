@@ -38,6 +38,10 @@ export default {
         text: "Java",
         link: "/java/java/",
       },
+      {
+        text: "React",
+        link: "/react/react/",
+      },
     ],
     // Public 文件路径
     logo: "/images/hero.png",
@@ -69,6 +73,13 @@ export default {
           text: "Java",
           collapsible: true,
           children: ["/java/java/index.md"],
+        },
+      ],
+      "/react/": [
+        {
+          text: "React",
+          collapsible: true,
+          children: ["/react/react/index.md"],
         },
       ],
     },

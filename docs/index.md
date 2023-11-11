@@ -6,8 +6,14 @@ heroHeight: 200
 heroText: 'zsyghmz - blog'
 tagline: 'zsyghmz - 知识点总结'
 actions:
-  - text: 快速上手
-    link: /node/node/
+  - text: NodeJs
+    link: /node/node
+    type: primary 
+  - text: Java
+    link: /java/java
+    type: primary 
+  - text: React
+    link: /react/react
     type: primary 
   - text: 我的开源
     link: 'https://github.com/liu4509'
