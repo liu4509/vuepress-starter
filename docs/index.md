@@ -3,14 +3,14 @@ home: true
 # Public 文件路径
 heroImage: /images/blog.jpg
 heroHeight: 200
-heroText: '个人博客'
-tagline: '个人学习知识点总结'
+heroText: 'zsyghmz - blog'
+tagline: 'zsyghmz - 知识点总结'
 actions:
   - text: 快速上手
     link: /node/node/
-    type: primary
-  - text: 项目简介
-    link: /node/koa
+    type: primary 
+  - text: 我的开源
+    link: 'https://github.com/liu4509'
     type: secondary
     
 features:

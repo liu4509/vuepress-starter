@@ -9,7 +9,7 @@ export default {
     "/": {
       lang: "zh-CN",
       title: "刘治彬个人博客",
-      description: "个人学习知识点总结",
+      description: "zsyghmz - 知识点总结",
     },
     "/US/": {
       lang: "en-US",
@@ -31,8 +31,12 @@ export default {
     navbar: [
       // NavbarItem
       {
-        text: "Node",
+        text: "NodeJs",
         link: "/node/node/",
+      },
+      {
+        text: "Java",
+        link: "/java/java/",
       },
     ],
     // Public 文件路径
@@ -50,14 +54,21 @@ export default {
       // SidebarItem
       "/node/": [
         {
-          text: "基础",
+          text: "NodeJs",
           collapsible: true,
-          children: ["/node/node/README.md"],
+          children: ["/node/node/index.md"],
         },
         {
-          text: "Koa",
+          text: "Express",
           collapsible: true,
-          children: ["/node/koa/README.md"],
+          children: ["/node/express/index.md"],
+        },
+      ],
+      "/java/": [
+        {
+          text: "Java",
+          collapsible: true,
+          children: ["/java/java/index.md"],
         },
       ],
     },
