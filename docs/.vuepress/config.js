@@ -42,6 +42,10 @@ export default {
         text: "React",
         link: "/react/react/",
       },
+      {
+        text: "设计模式",
+        link: "/devise/devise/",
+      },
     ],
     // Public 文件路径
     logo: "/images/hero.png",
@@ -80,6 +84,13 @@ export default {
           text: "React",
           collapsible: true,
           children: ["/react/react/index.md"],
+        },
+      ],
+      "/devise/": [
+        {
+          text: "设计模式",
+          collapsible: true,
+          children: ["/devise/devise/index.md"],
         },
       ],
     },

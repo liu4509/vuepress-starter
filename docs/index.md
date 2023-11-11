@@ -15,6 +15,9 @@ actions:
   - text: React
     link: /react/react
     type: primary 
+  - text: 设计模式
+    link: /devise/devise
+    type: primary 
   - text: 我的开源
     link: 'https://github.com/liu4509'
     type: secondary
