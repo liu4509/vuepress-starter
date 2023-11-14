@@ -582,3 +582,19 @@ componentDidUpdate(prevProps) {
 > 执行清理工作 比如：清理定时器
 
 ### 
+
+
+
+# React 进阶事件指南
+
+## jsx
+
+### jsx 转换器
+
+## 组件通信
+
+1. props 传递
+
+2. ref 凡是、、、
+
+## 
