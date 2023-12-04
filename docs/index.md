@@ -31,5 +31,5 @@ features:
     details: VuePress 会为每个页面预渲染生成静态的 HTML，同时，每个页面被加载的时候，将作为 SPA 运行。
     
 footerHtml: true
-footer: 个人博客 <img src="https://picss.sunbangyan.cn/2023/11/14/4d761bbcc606df3f4ae97f9142280eb8.png"> <a href="https://beian.mps.gov.cn/#/query/webSearch" target="_blank">贵公网安备52018102008526号 </a> <a href="https://beian.miit.gov.cn/" target="_blank"> 黔ICP备2023014484号-1 </a>
+footer: 个人博客 <img src="https://i2.100024.xyz/2023/12/04/fdav6z.webp"> <a href="https://beian.mps.gov.cn/#/query/webSearch" target="_blank">贵公网安备52018102008526号 </a> <a href="https://beian.miit.gov.cn/" target="_blank"> 黔ICP备2023014484号-1 </a>
 ---
