@@ -348,6 +348,96 @@
 
 63. 工具类设计思想
     
-    > 重写无参构造函数用 private 修饰 外部无法实例化
+    > 重写无参构造函数用 private 修饰 外部无法实例化 无法 new 
     > 
-    > 成员方法用 public static 修饰  通过类名访问
+    > 成员方法用 public static 修饰  通过类名访问 类名.方法名
+
+64. 包装类 用于基本数据类型与字符串之间的转化
+    
+    > 需求 int 的类型范围 int 的包装类是 Integer 
+    > 
+    > Integer.MAX_VALUE
+    > 
+    > 推荐 Integer.valueOF( int or string )
+    > 
+    > 包装类 通过各自的 .valueOF 转换其他类型为自己的类型
+    > 
+    > 返回类型 int 有直接的方法 Integer.parseInt()
+
+65. 年份 api (Calendar)
+    
+    > 
+    
+    ```java
+        //    日历类 api 使用
+        public static void main(String[] args) {
+    // 获取 Calendar 对象
+            Calendar c = Calendar.getInstance();
+    //        System.out.println("c = "+c); // c = java.util.GregorianCalendar[time=1702999596607,areFieldsS
+            c.add(Calendar.YEAR, -22); // 年份修改
+            c.set(2008,8,18); // 直接设置时间
+            int year = c.get(Calendar.YEAR);
+    //        月份从 0 开始 需要加一
+            int month = c.get(Calendar.MONTH) + 1;
+            int date = c.get(Calendar.DATE);
+            System.out.println(year + "年" + month + "月" + date +
+         "日"); // 2008年9月18日
+        }
+    ```
+
+66. 异常
+    
+    > 异常处理 
+    
+    ```java
+        public static void main(String[] args) {
+            try { // 结构体中捕获异常
+                a1();
+    //        } catch (NullPointerException err) {  捕获指定异常
+            } catch (ArrayIndexOutOfBoundsException errArr) { // 可以多次 catch 但子类要在基类前面 不然无法执行到
+                System.out.println("数组越界异常:" + errArr.getMessage()); // 当捕获成功 后面的捕获不会执行
+                errArr.printStackTrace(); // 控制台打印详细信息
+            } catch (Exception err) { // 捕获异常基类 捕获全部异常
+                System.out.println("错误:" + err);
+            } finally {
+                System.out.println("不论成功与否都会执行");
+            }
+        }
+        // 告诉调用者 可能会抛出该异常
+        public static void a1() throws ArrayIndexOutOfBoundsException {
+            int[] arr1 = {0, 1, 2};
+            // 报数组越界异常 ArrayIndexOutOfBoundsException
+            System.out.println(arr1[3]);
+        }
+    ```
+
+67. 编译时异常 
+    
+    > 必需显示处理
+
+68. 运行时异常
+    
+    > 不必显示处理 但处理方法与 编译时异常一致
+
+69. 自定义异常
+    
+    > 向上抛出异常
+    
+    ```java
+    public static void main(String[] args) throws  LoginException{
+            throw new LoginException("自定义异常");
+    }
+    ```
+    
+    > 自定义异常 是否显示捕获
+    
+    ```java
+    // 运行时异常 不用显示捕获
+    public class LoginException extends RuntimeException {
+    // 编译时异常 必需显示捕获
+    //public class LoginException extends Exception {
+        public LoginException(String massage) {
+            super(massage);
+        }
+    }
+    ```
