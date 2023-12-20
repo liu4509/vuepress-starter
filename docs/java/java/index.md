@@ -1,4 +1,3 @@
-
 # 基础
 
 ## 应知
@@ -441,3 +440,42 @@
         }
     }
     ```
+
+## 集合框架
+
+70. 由 JDK 封装好的 API 需注意是 java.util 包下
+
+71. 提供一种存储空间可变的存储模型 存储的数据容量可以发送改变
+    
+    > 黄色-接口 红色-实现类
+    > 
+    > ![](C:\Users\26086\AppData\Roaming\marktext\images\2023-12-20-19-52-13-image.png)
+    > 
+    > |      | 数据是否可重复 |
+    > | ---- | ------- |
+    > | List | ✔       |
+    > | Set  | ❌       |
+
+72. 常见集合框架 数组 链表 树 队列
+
+73. Arraylist  类通过 new 可以实例化 
+    
+    > 单列 
+    > 
+    > ```java
+    > Collection collection01 = new ArrayList<String>();
+    > collection01.add("1111");
+    > ```
+    > 
+    > ![](C:\Users\26086\AppData\Roaming\marktext\images\2023-12-20-20-02-52-image.png)
+
+74. Map() 类通过 new 可以实例化
+    
+    > 多列
+    > 
+    > ```java
+    > HashMap<String, String> hashMap = new HashMap<>();
+    > hashMap.put("index1", "value1");
+    > ```
+    > 
+    > ![](C:\Users\26086\AppData\Roaming\marktext\images\2023-12-20-20-10-51-image.png)
